@@ -747,6 +747,7 @@ transition: 0.5s;
 .ai-fe {align-items: flex-end;}
 
 .as-fe {align-self: flex-end;}
+.as-c {align-self: center;}
 
 .d-n-a::after{display: none !important;}
 .sellerAvatar {
