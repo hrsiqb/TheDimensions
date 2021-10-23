@@ -1,8 +1,7 @@
 $(document).ready(function(){
   
     $(".nav-btn").click(function(){
-      console.log($("#nav-btn-span").attr('class'))
-      if($("#nav-btn-span").attr('class') == "fa fa-times w-18px"){
+      if($("#nav-btn-span").attr('class').includes("fa-times")){
         $("#nav-btn-span").removeClass("fa-times");
         $("#nav-btn-span").addClass("fa-bars");
       }else{
