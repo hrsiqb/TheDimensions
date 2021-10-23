@@ -1,20 +1,13 @@
-// function myFunction() {
-//     var x = document.getElementById("myTopnav");
-//     if (x.className === "topnav") {
-//       x.className += " responsive";
-//     } else {
-//       x.className = "topnav";
-//     }
-//   }
-
 $(document).ready(function(){
   
     $(".nav-btn").click(function(){
-
-      if($(".nav-btn").text() == "☰"){
-        $(".nav-btn").text("🞬");
+      console.log($("#nav-btn-span").attr('class'))
+      if($("#nav-btn-span").attr('class') == "fa fa-times w-18px"){
+        $("#nav-btn-span").removeClass("fa-times");
+        $("#nav-btn-span").addClass("fa-bars");
       }else{
-        $(".nav-btn").text("☰");
+        $("#nav-btn-span").removeClass("fa-bars");
+        $("#nav-btn-span").addClass("fa-times");
       }
       
       $(".nav-list").toggle("slow");
