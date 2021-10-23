@@ -34,7 +34,7 @@ nav{
 .nav-btn{
     display: none;
   }
-.nav-div {display:flex; flex-direction: row;}
+.nav-div {display:flex; flex-direction: row; flex-wrap: wrap;}
 
 .desc-div{margin-top: 120px}
 .desc-p1{font-size: 64px !important;font-family: "Montserrat",Sans-serif}
@@ -48,13 +48,25 @@ nav{
 
 /* .img{height: 900px;} */
 
-.nav-div {background-color: rgba(0, 47, 52, .5) !important; flex-direction: column;}
+.card-mid{
+    margin-top: 0 !important;
+    height: 340px !important;
+}
+
+.nav-div {
+    background-color: rgba(0, 47, 52, .5) !important; 
+    flex-direction: column; 
+    position: absolute;
+    margin-top: 150px;
+    width: "100%" !important;
+}
 
 #top-nav{display: none !important;}
 
 .nav-ul{
     flex-direction: column;
     margin-right: 10px;
+    margin-top: 15px;
   }
 .logo-div{
     margin-left: 10px;
@@ -86,6 +98,7 @@ nav{
     background-color: orange;
     border: none;
     font-weight: 700 !important;
+    outline: none !important;
 }
 .btn-o:hover{
     background-color: #dfa018;
@@ -133,20 +146,43 @@ nav{
 font-size: 20px;
 transition: 0.5s;
 } */
-.card{
-    border:none !important;
+.card, .card-mid{
+    width: 380px;
+    height: 340px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
-.card:hover{
+.card {
+    border: none !important;
+}
+.card-mid{
+    border: 1px solid rgb(212, 212, 212);
+    height: 400px !important;
+    margin-top: -60px;
+}
+.card-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin-top: -60px;
+}
+/* .card:hover{
     box-shadow: 0 8px 16px 10px rgba(150, 141, 141, 0.2);
     transition: 0.3s;
-}
-.div:hover{
-     /* background-color: grey !important;  */
+} */
+/* .div:hover{
+     background-color: grey !important; 
 
     box-shadow: 0 8px 16px 10px rgba(0,0,0,0.2) !important;
     font-size: 25px !important;
     transition: 0.5s;
-}
+} */
 
 .nl:hover{
     color: black;
@@ -339,6 +375,8 @@ transition: 0.5s;
     height: 46px;
 }
 
+.ff-m-ss{font-family: "Montserrat",Sans-serif}
+
 .f-10 {font-size: 10px !important}
 .f-11 {font-size: 11px !important}
 .f-12 {font-size: 12px !important}
@@ -410,6 +448,7 @@ transition: 0.5s;
 
 .f-cg {color: rgba(0, 47, 52, .64);}
 .fc-gry {color: rgb(83, 81, 81)}
+.fc-sec {color: #565656}
 .fc-blu1 {color: #56acdd}
 .fc-g {color: rgba(0, 47, 52, .64);}
 .fc-r {color: red;}
@@ -484,6 +523,7 @@ transition: 0.5s;
 
 .w-m-100{max-width: 100% !important;}
 
+.w-m-1300px{max-width: 1300px;}
 .w-m-1265px{max-width: 1265px;}
 .w-m-1100px{max-width: 1100px;}
 .w-m-800px{max-width: 800px;}
@@ -749,7 +789,7 @@ transition: 0.5s;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 700px;
+    height: 750px;
 }
 
 .pos-r{position: relative;}
