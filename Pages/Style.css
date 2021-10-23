@@ -43,6 +43,7 @@ nav{
     max-width: 600px;
     margin-top: 20px;
     padding: 30px;
+    margin-left: 100px;
 }
 
 .serv-div{
@@ -53,13 +54,30 @@ nav{
     align-items: center;
     margin-top: 50px;
 }
+.serv-card{
+    width: 380px;
+    height: 380px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding: 40px; */
+    border: 1px solid rgb(212, 212, 212);
+    box-shadow: 0 8px 16px 10px rgba(150, 141, 141, 0.2);
+    margin: 15px;
+    border-radius: 5px;
+}
+
 @media only screen and (max-width: 700px) {
 
 .desc-div{margin-top: 10px}
 .desc-p1{font-size: 24px !important}
 /* .desc-p2{font-size: 12px !important} */
 
-/* .img{height: 900px;} */
+.img{height: 700px !important;}
+
+.about-div{ margin-left: 0 !important;}
 
 .serv-div{
     margin-top: 0 !important;
@@ -180,6 +198,7 @@ transition: 0.5s;
     border: 1px solid rgb(212, 212, 212);
     height: 400px !important;
     margin-top: -60px;
+    border-radius: 5px !important;
 }
 .card-div{
     display: flex;
@@ -362,6 +381,8 @@ transition: 0.5s;
 
 .brad-50 {border-radius: 50% !important;}
 
+.brad-t-5px {border-top-left-radius: 5px !important; border-top-right-radius: 5px !important;}
+.brad-5px {border-radius: 5px !important;}
 .brad-30px {border-radius: 30px !important;}
 .brad-50px {border-radius: 50px !important;}
 
@@ -398,6 +419,7 @@ transition: 0.5s;
 }
 
 .ff-m-ss{font-family: "Montserrat",Sans-serif}
+.ff-t-s{font-family: 'Times New Roman', Times, serif}
 
 .f-10 {font-size: 10px !important}
 .f-11 {font-size: 11px !important}
