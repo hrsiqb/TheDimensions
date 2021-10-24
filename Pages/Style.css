@@ -154,22 +154,40 @@ nav{
     
     z-index: 20;
 }
+@media only screen and (max-width: 1200px) {
 
+.img {display: block !important;}
+
+}
+@media only screen and (max-width: 1100px) {
+
+.card-mid {
+    height: 340px !important;
+    margin-top: 0 !important;
+}
+
+.footer-div{justify-content: center;}
+.footer-sdiv{align-items: flex-start !important;}
+.footer-hdiv{justify-content: center;}
+.frame-div{justify-content: center;}
+.maps-frame{width: 300px;}
+
+}
 @media only screen and (max-width: 700px) {
 
 .desc-div{margin-top: 10px}
 .desc-p1{font-size: 24px !important}
 /* .desc-p2{font-size: 12px !important} */
 
-.footer-div{justify-content: center;}
-.footer-sdiv{align-items: flex-start !important;}
+/* .footer-div{justify-content: center;}
+.footer-sdiv{align-items: flex-start !important;} */
 .icon-ft{margin-top: 30px;}
 
 .copy-p{text-align: center;}
 .soc-a{justify-content: center;}
 
-.frame-div{justify-content: center;}
-.maps-frame{width: 300px;}
+/* .frame-div{justify-content: center;}
+.maps-frame{width: 300px;} */
 .top-btn{left: 80% !important;}
 
 .img{height: 700px !important;}
@@ -180,17 +198,18 @@ nav{
     margin-top: 0 !important;
 }
 
-.card-mid{
+/* .card-mid{
     margin-top: 0 !important;
     height: 340px !important;
-}
+} */
 
 .nav-div {
     background-color: rgba(0, 47, 52, .5) !important; 
     flex-direction: column; 
     position: absolute;
     margin-top: 150px;
-    width: "100%" !important;
+    align-items: flex-start;
+    /* width: 100% !important; */
 }
 
 #top-nav{display: none !important;}
@@ -676,6 +695,7 @@ transition: 0.5s;
 
 .w-m-100{max-width: 100% !important;}
 
+.w-m-1400px{max-width: 1400px;}
 .w-m-1300px{max-width: 1300px;}
 .w-m-1265px{max-width: 1265px;}
 .w-m-1100px{max-width: 1100px;}
@@ -820,6 +840,8 @@ transition: 0.5s;
 .bt-g{
     border-top: 1px solid #bfb9b9 !important;
 }
+
+
 .c-a:hover {cursor: auto !important;}
 .h-p:hover {cursor: pointer;
 }
@@ -955,7 +977,10 @@ transition: 0.5s;
 }
 
 .img {
-    background-image: url('../Images/background1.jpg');
+    background-image: url('../Images/background2.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
