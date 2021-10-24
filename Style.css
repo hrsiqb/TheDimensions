@@ -6,7 +6,6 @@ html{
 .nav-list{
     list-style-type: none;
     margin: 2vw 0;
-    
     font-size: 3vh;
   }
   
@@ -179,6 +178,8 @@ nav{
 .desc-p1{font-size: 24px !important}
 /* .desc-p2{font-size: 12px !important} */
 
+.nav-list{ padding-bottom: 30px;}
+
 /* .footer-div{justify-content: center;}
 .footer-sdiv{align-items: flex-start !important;} */
 .icon-ft{margin-top: 30px;}
@@ -198,18 +199,16 @@ nav{
     margin-top: 0 !important;
 }
 
-/* .card-mid{
-    margin-top: 0 !important;
-    height: 340px !important;
-} */
-
 .nav-div {
     background-color: rgba(0, 47, 52, .5) !important; 
     flex-direction: column; 
     position: absolute;
-    margin-top: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-left: 50px;
+    height: 100vh;
     align-items: flex-start;
-    /* width: 100% !important; */
 }
 
 #top-nav{display: none !important;}
